@@ -1,0 +1,319 @@
+body {
+    background-image: url(img/bg3.png);
+    background-color: darkgrey;
+
+}
+
+.header {
+
+    width: 100%;
+    height: 60px;
+    background-color:#fff;
+    padding: 10px;
+    position: fixed;
+    margin: 0px;
+    z-index: 20;
+
+}
+
+.header-wrapper {
+    height: 60px;
+    width: 90%;
+    /* 
+fluidez do site
+*/
+    margin: auto;
+    max-width: 1170;
+    min-width: 400px;
+    position: relative;
+
+}
+
+
+.logo {
+    float: left;
+}
+
+.menu {
+    margin-top: 25px;
+    float: right;
+
+}
+
+.nav {
+    display: inline;
+    list-style: none;
+
+}
+
+li {
+
+    display: inline;
+    padding: 30px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-titulo {
+    display: inline;
+    position: relative;
+    line-height: 60px;
+    vertical-align: center;
+}
+
+.content-wrapper {
+
+    width: 90%;
+    /* 
+fluidez do site
+*/
+
+   margin-top:-20px;
+    margin: auto;
+    max-width: 1170px;
+    min-width: 400px;
+    background-color: #fff;
+    text-align: justify;
+     z-index: 2;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+
+
+h1 {}
+
+.welcome {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 20px;
+    
+}
+
+p {
+    padding: 20px;
+}
+
+.footer {
+    height: 30px;
+    margin-bottom: 0px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    position: relative;
+z-index: 20;
+}
+
+.footer-wrapper {
+    margin: auto;
+    max-width: 800px;
+    min-width: 400px;
+    width: 90%;
+    text-align: center;
+    z-index: 20;
+}
+
+.evento {
+    width: 28.3%;
+    padding: 20px;
+
+
+    text-align: center;
+    float: left;
+    
+}
+
+.header-bg {
+    background-image: url(img/header-bg.gif);
+    background-size:cover;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+   z-index: 1;
+    animation: focus 15s ease-in-out infinite;
+  -webkit-filter:blur(5px); 
+  z-index:1;
+  position:absolute;
+}
+ @keyframes focus { 
+  0% {-webkit-filter:blur(0px);}
+  30% {-webkit-filter:blur(0px);}
+  50% {-webkit-filter:blur(4px);}
+  60% {-webkit-filter:blur(0px);}
+  80% {-webkit-filter:blur(0px);}
+  90% {-webkit-filter:blur(6px);}
+  100% {-webkit-filter:blur(0px);}
+} 
+}
+
+.evento-wrapper {
+        background-color: #f6f6f6;
+    padding: 20px;
+}
+
+.sobre {
+    position: relative;
+}
+
+.container {
+    background-color:#fff;
+    padding-bottom:50px;
+    
+}
+
+.calendario {
+    
+    position: relative;
+}
+
+.container1 {
+    margin-top: -75px;
+}
+
+/*-- camera details --*/
+.camera{
+  position: absolute;  
+  height:100%;
+  width:100%;
+  z-index:3;
+  pointer-events:none;
+}
+.battery{
+position: absolute;
+top: 100px;
+left: 20px;
+width: 80px;
+height: 34px;
+border: 2px solid white;
+border-radius: 5px;
+padding: 4px;
+box-sizing: border-box;
+}
+.battery:after{
+content: ' ';
+background: white;
+width: 5px;
+height: 21px;
+position: absolute;
+right: -10px;
+border-radius: 0px 2px 2px 0px;
+top: 4px;
+}
+.juice{
+background:red;
+width:15%;
+height:100%;
+animation: blinky 1s ease-in-out infinite;
+animation-delay: 2s;
+}
+@keyframes blinky { 
+  0% {background:transparent;}
+  49% {background:transparent;}
+  50% {background:red;}
+}
+.rec{
+  position:absolute;
+  right: 30px;
+  top: 100px;
+  color:#fff;
+  font-size:30px;
+}
+.rec span span{
+  width:20px;
+  height:20px;
+  display:inline-block;
+  background:red;
+  border-radius:50%;
+  margin-right:10px;
+  animation: blinky 1s ease-in-out infinite;
+}
+.meta{
+  position:absolute;
+  bottom:60px;
+  right:10px;
+  color:#fff;
+  font-size:20px;
+  letter-spacing:1px;
+}
+.exposure{
+  border: 2px solid #fff;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-left: 0px;
+}
+.exposure:after{
+  content: ' ';
+  position: absolute;
+  width: 0px;
+  display: block;
+  height: 0px;
+  top: 0px;
+  right: 0px;
+  border-left: 0px solid transparent;
+  border-right: 20px solid white;
+  border-bottom: 0px solid transparent;
+  border-top: 20px solid transparent;
+}
+.exposure span{
+  font-size:12px;
+}
+.exposure span.plus{
+  position: absolute;
+  top: -2px;
+  left: 2px;}
+.exposure span.minus{
+  color: #371c3b;
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  font-size: 17px;
+  bottom: -5px;
+}
+.timer{
+  position:absolute;
+  bottom:100px;
+  left:30px;
+  color:#fff;
+  font-size:20px;
+  letter-spacing:1px;
+}
+.test {
+  position: relative;
+  width:100vw;
+  height:100vh;
+  background: url(https://keithclark.co.uk/img/3d-css-fps.jpg) 50% 50% / cover;
+  overflow: hidden;
+}
+
+.test::before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right:0;
+  background-image: linear-gradient(
+    rgba(0,0,0,.5) 0px,
+    rgba(0,0,0,0) 2px,
+    rgba(0,0,0,.7) 3px
+  );
+  background-size: 100% 4px;
+  animation: .43s interference infinite ease-in-out alternate;  
+    transform-origin:0 0%;
+}
+
+
+@keyframes interference {
+  to {
+    transform-origin:0 100%;
+    transform: scale(1.15)
+  }
+}
