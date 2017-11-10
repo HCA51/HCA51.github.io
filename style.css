@@ -86,22 +86,6 @@ padding-top: 100vh;
 .content-wrapper {
     background-color: #fff;
 
-
-    /* 
-fluidez do site
-*/
-
-   margin-top:-20px;
-    margin: auto;
-    max-width: 1170px;
-    min-width: 400px;
-    background-color: #fff;
-    text-align: justify;
-     z-index: 2;
-    position: relative;
-    overflow: hidden;
-    
-
 }
 
 
@@ -200,7 +184,7 @@ z-index: 20;
 
 /*-- camera details --*/
 .camera{
-  position: absolute;  
+  position: fixed;
   height:100%;
   width:100%;
   z-index:3;
