@@ -76,6 +76,9 @@ li {
     vertical-align: center;
 }
 
+.content {
+
+}
 .content-wrapper {
 
     width: 90%;
@@ -146,11 +149,11 @@ z-index: 20;
     background-image: url(img/header-bg.gif);
     background-size:cover;
     background-position: center;
-    position: fixed;
+    background-color: #000;
     width: 100%;
     height: 100vh;
     margin: auto;
-   z-index: 1;
+
     animation: focus 15s ease-in-out infinite;
   -webkit-filter:blur(5px); 
   z-index:1;
@@ -378,4 +381,23 @@ animation-delay: 2s;
 
 .white-text{
 	color:white;
+}
+
+.sobretop {
+    height: 250px;
+    overflow: hidden;
+    margin-top:-15
+}
+
+.imagemsobre {
+    margin-top:-250px
+}
+
+.header-bg-wrapper {
+
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: #000;
+    z-index: 1;
 }
