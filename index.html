@@ -7,94 +7,105 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Fonte -->
 </head>
 
 <body>
     <!-- HEADER-->
 
-    <div class="header">
-        <div class="header-wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-            <div class="logo">
-                <img src="img/logo.jpg" alt="Logo" height="60px" width="60px">
-            </div>
-            <div class="menu">
-                <ul class="nav">
-                    <li>Sobre</li>
-                    <li>Calendário</li>
-                </ul>
-            </div>
-        </div>
+      <a class="navbar-brand" href="#"> <img alt="logo" src="img/logo.jpg" class="logo">
+        <img alt="hack" src="https://pbs.twimg.com/profile_images/415179630711017473/GoaxROKl_400x400.png" class="logo2"><img alt="hack" src="http://200.144.182.130/raeb/images/Untitled2.png" class="logo2"></a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li><a href="#sobre"><span class="glyphicon glyphicon-info-sin"></span>Sobre</a></li>
+				<li><a href="#portfolio"><span class="glyphicon glyphicon-lab"></span>&nbsp;&nbsp;Atividades</a></li>
+				<li><a href="#contact"><span class="glyphicon glyphicon"></span>Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
     <!-- FIM DO HEADER-->
     <div class="camera">
-            <div class="battery">
-                <div class="juice"></div>
-            </div>
-            <!-- end div.battery -->
-            <div class="rec">
-                <span><span></span>REC</span>
-            </div>
-            <!-- end div.rec -->
-            <div class="meta">
-                <p>F2.3&nbsp;&nbsp;0dB&nbsp;&nbsp;15.7V
-                    <span class="exposure">
-          <span class="plus">+</span>
-                    <span class="minus">-</span>
-                    </span>
-                </p>
-            </div>
-            <!-- end div.meta -->
-            <div class="timer">
-                <label id="hours">00</label>:
-                <label id="minutes">00</label>:
-                <label id="seconds">00</label>
-            </div>
-            <!-- end div.timer -->
+        <div class="battery">
+            <div class="juice"></div>
         </div>
+        <!-- end div.battery -->
+        <div class="rec">
+            <span><span></span>REC</span>
+        </div>
+        <!-- end div.rec -->
+        <div class="meta">
+            <p>F2.3&nbsp;&nbsp;0dB&nbsp;&nbsp;15.7V
+                <span class="exposure">
+          <span class="plus">+</span>
+                <span class="minus">-</span>
+                </span>
+            </p>
+        </div>
+        <!-- end div.meta -->
+        <div class="timer">
+            <label id="hours">00</label>:
+            <label id="minutes">00</label>:
+            <label id="seconds">00</label>
+        </div>
+        <!-- end div.timer -->
+    </div>
     <div class="header-bg">
-    <div class="test"></div>    
+        <div class="test"></div>
     </div>
     <div class="content">
-        <div class="container1">
-            <div class="container">
-                <div class="content-wrapper">
+
+        <div class="container">
+            <div class="roll">
 
 
-                    <div class="sobre">
-                        <div class="welcome">Inscreva-se para os próximos encontros:</div>
+                <div class="sobre">
+                    <div class="welcome">Inscreva-se para os próximos encontros:</div>
 
-                    </div>
-                    <div class="calendario">
-                        <div class="evento">
-                            <div class="evento-wrapper">
-                                <h2>22/09 às 19hs</h2>
-                                <p>Local: Lafac II</p>
-                                <button type="button">INCREVA-SE</button>
-                            </div>
-                        </div>
-                        <div class="evento">
-                            <div class="evento-wrapper">
-                                <h2>dia 22/09</h2>
-                                <p>19h</p>
-                                <button type="button">INCREVA-SE</button>
-                            </div>
-                        </div>
-                        <div class="evento">
-                            <div class="evento-wrapper">
-                                <h2>dia 22/09</h2>
-                                <p>19h</p>
-                                <button type="button">INCREVA-SE</button>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-4 evento">
+
+                            <h2>22/09 às 19hs</h2>
+                            <p>Local: Lafac II</p>
+                            <button type="button">INCREVA-SE</button>
+
+                    </div>
+                    <div class="col-md-4 evento">
+
+                            <h2>22/09 às 19hs</h2>
+                            <p>Local: Lafac II</p>
+                            <button type="button">INCREVA-SE</button>
+
+                    </div>
+                    <div class="col-md-4 evento">
+
+                            <h2>22/09 às 19hs</h2>
+                            <p>Local: Lafac II</p>
+                            <button type="button">INCREVA-SE</button>
+
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </div>
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
