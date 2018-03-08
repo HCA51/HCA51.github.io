@@ -296,7 +296,7 @@ animation-delay: 2s;
   position: relative;
   width:100vw;
   height:100vh;
-  background: url(https://keithclark.co.uk/img/3d-css-fps.jpg) 50% 50% / cover;
+
   overflow: hidden;
 }
 
