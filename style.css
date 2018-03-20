@@ -31,16 +31,26 @@ fluidez do site
 
 
 .logo {
+    position: relative;
     filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-    margin-top: -20px;
-    float: left;
-    height: 60px;
-    padding-right: 20;
+    margin-top: -5px;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+    height: 80px;
+    width: 80px;
+ 
 
 }
 
+.fooo {
+    background-color:#fff;
+}
+.alo { padding-bottom:50px; background-color:#fff;}
 .logo2 {
     filter: gray; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
@@ -391,4 +401,20 @@ animation-delay: 2s;
     margin: auto;
     background-color: #000;
     z-index: 1;
+}
+.titulo1 {
+    text-align: center;
+    margin-bottom:50px;
+}
+
+.img-responsive {
+    
+}
+
+.evento-title {
+    padding-left:20px;
+    margin-bottom:-20px;
+}
+.navegacao {
+	height:100px
 }
